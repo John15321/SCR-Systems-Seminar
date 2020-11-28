@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Piotr Gorzelnik Seminarium</title>
+</head>
+<body>
+    <header>
+        <h1>Konteneryzacja kontra wirtualizacja</h1>
+        <h2>Piotr Gorzelnik 248947</h2>
+        <h3>18 listopada 2020</h3>
+        <h3>Seminarium SCR - systemy operacyjne - środa 13:15 TN</h3>
+        <h3>Prowadzący: dr inż. Katarzyna Zadarnowska</h3>
+        <h3>Politechinka Wrocławska - Wydział Elektroniki - Automatyka i Robotyka</h3>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#1">Wyjaśnienie pojęć wirtualizacji i konteneryzacji</a></li>
+            <li><a href="#2">Porównanie działania i zużycia zasobów</a></li>
+            <li><a href="#3">Omówienie działania i zastosowanie Dockera</a></li>
+            <li><a href="#4">Zalety obu metod</a></li>
+            <li><a href="#5">Kto z tego korzysta?</a></li>
+            <li><a href="#6">Podsumowanie</a></li>
+       	    <li>
+                 <p>https://youtu.be/Ro3An27OZ2U</p>
+            </li>
+ 	</ul> 
+    </nav>
+    <main>
+        <section id="1">
+            <h3>Wyjaśnienie pojęć wirtualizacji i konteneryzacji</h3>
+            <p>Konteneryzacja oraz wirtualizacja sprowadzają się do tego samego, czyli do uruchamiania konkretnych aplikacji w izolowanym, bezpiecznym środowisku.  W tradycyjnej wirtualizacji wykorzystywany jest kompletny systemem operacyjny (gościa) działającym na bazie systemu operacyjnego hosta (gospodarza).  Konteneryzacja pozwala obniżyć ilość warstw abstrakcji poprzez usunięcie drugiego (zbędnego) systemu operacyjnego i hipernadzorcy.</p>
+        </section>
+        <section id="2">
+            <h3>Porównanie działania i zużycia zasobów</h3>
+            <p>Maszyny wirtualne zazwyczaj są ciężkie i zużywają dużo zasobów. Konieczna jest pełna instalacja systemu operacyjnego i jego konfiguracja. Maszyny wirtualne zużywają znacznie więcej zasobów na własne potrzeby np. aby uruchomić aplikację na maszynie wirtualnej, hipernadzorca musi ją zaimportować oraz załadować.
+
+                Różnica w wydajności pomiędzy aplikacją kontenerową, a aplikacją działającą na fizycznym sprzęcie staje się niewielka, przy czym zachowane są zalety wirtualizacji (skalowalność, przenośność, izolacja między instancjami)</p>
+        </section>
+        <section id="3">
+            <h3>Omówienie działania i zastosowanie Dockera</h3>
+            <p>Docker jest otwartoźródłowym oprogramowaniem pozwalającym umieścić aplikację oraz jej zależności w wirtualnym kontenerze, który można uruchomić na serwerze z systemem operacyjnym Linux, a także Windows i macOS poprzez dodatkowe oprogramowanie. Charakterystyką Dockera jest jego prostota oraz fakt, że odpowiada za pełny cykl życia kontenerów: tworzenie, zarządzanie i niszczenie.</p>
+        </section>
+        <section id="4">
+            <h3>Zalety obu metod</h3>
+            <p>Wirtualizacja:
+                - dokładne odwzorowanie systemu operacyjnego
+                - prostota obsługi
+                - pełna izolacja
+                
+                Konteneryzacja:
+                - wydajność
+                - szybkość
+                - mobilność</p>
+        </section>
+        <section id="5">
+            <h3>Kto z tego korzysta?</h3>
+            <p>Zarówno z konteneryzacji jak i wirtualizacji korzystają najwięksi giganci w świecie IT. Daje to możliwość rozwoju kariery jako inżynier DevOps - osoba odpowiedzialna za synergię między działami wytwarzania oprogramowania a działami zarządzania systemami. Pozwala to przyspieszenie oraz ułatwienie procesu wdrażania wytworzonego oprogramowania.</p>
+        </section>
+        <section id="6">
+            <h3>Podsumowanie</h3>
+            <p>Oba rozwiązania mają swoje wady i zalety. Kontenery nie mogą zastąpić we wszystkim maszyn wirtualnych. Wybór którejś z nich powinien zależeć od konkrentego problemu oraz osobistych preferencji.</p>
+        </section>
+        <section id="Bibliografia">
+            <h3>Bibliografia: </h3>
+            <ol>
+                <li>
+                    <p>https://blog.netapp.com/blogs/containers-vs-vms/</p>
+                </li>
+                <li>
+                    <p>https://ncoder.pl/docker-podstawowa-idea-wirtualizacja-vs-konteneryzacja/</p>
+                </li>
+                <li>
+                    <p>https://magnifier.pl/konteneryzacja-docker-kubernetes/</p>
+                </li>
+            </ol>
+        </section>
+    </main>
+</body>
+</html>
